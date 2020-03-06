@@ -34,8 +34,12 @@ footer {
   text-align: center;
 }
 
-a, a:hover, a:focus, a:visited {
-  color: #41B883;
+a:hover, a:focus, a:visited {
+  color: #fe8c00;
+}
+
+a {
+  color: #999;
 }
 
 .logo {
