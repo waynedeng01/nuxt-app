@@ -19,6 +19,17 @@ export default {
     return {
       user: ""
     };
+  },
+  mounted() {
+    this.getUser();
+  },
+  methods: {
+    async getUser() {
+      const {
+        data: { user, email }
+      } = await this.$axios.get("/users/getUser");
+      this.user = user;
+    }
   }
 };
 </script>
